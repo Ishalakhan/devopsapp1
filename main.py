@@ -18,3 +18,7 @@ def contact_us():
 def contact_us():
 	return {'course':"cs"}
     
+@app.get("/dept")
+def contact_us():
+	return {'course':"cs"}
+    
