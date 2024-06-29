@@ -6,11 +6,15 @@ app = FastAPI()
 def read_root():
 	return {"Hello": "World"}
 
-@fastaapp.get("/About")
+@app.get("/About")
 def about():
 	return {"msg": "About msg"}
 
 @app.get("/Contact-us")
 def contact_us():
 	return {"email": "abc@gmail.com", "mob" : "1234567890"}
+
+@app.get("/dept")
+def contact_us():
+	return {'course':"cs"}
     
